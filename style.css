@@ -15,3 +15,16 @@
     background-color: rgb(0,0,0,0.4);
     padding: 16px;
 }
+.body {
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.right-links {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+}
