@@ -20,16 +20,16 @@
 }
 .header {
     display: flex;
-    padding: 6px;
+    padding: 2px;
     padding-right: 16px;
     justify-content: space-between;
-    background-color: darkslategray;
+    background-color: black;
 
 }
 .right-links,
 .left-links {
     display: flex;
-    gap: 8px;
+    gap: 12px;
     list-style: none;
 }
 
