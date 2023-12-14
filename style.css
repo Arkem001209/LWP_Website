@@ -1,7 +1,6 @@
 .title {
-    background-image: url(Images/Tower-of-London-Wall-920.jpg);
+    background-image: url(Images/London-at-night-1024x845.jpg);
     color: white;
-    background-color: (0, 0, 0, 0.4) ;
     display: flex;
     padding-top: 180px;
     flex-direction: column;
@@ -9,4 +8,8 @@
     background-position: center center;
     background-size: cover;
     background-color: #464646;
+}
+.background {
+    background-color: rgb(0,0,0,0.4);
+    padding: 16px;
 }
