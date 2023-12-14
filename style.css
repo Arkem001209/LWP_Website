@@ -33,7 +33,7 @@
     list-style: none;
 }
 
-a {
+.header_buttons {
     text-decoration: none;
     color: white;
     font-weight: bold;
