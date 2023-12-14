@@ -45,3 +45,8 @@ h1 {
 .second_section {
     display: flex;
 }
+.us,
+.what {
+    border: 4px;
+    border-color: black;
+}
