@@ -29,7 +29,6 @@
     display: flex;
     gap: 8px;
     list-style: none;
-    flex: 1;
 }
 
 a {
