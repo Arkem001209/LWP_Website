@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    padding: 2px;
+    padding-right: 16px;
+    justify-content: space-between;
+    background-color: black;
+
+}
+.right-links,
+.left-links {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+}
+
+.header_buttons {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
