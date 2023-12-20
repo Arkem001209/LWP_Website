@@ -15,8 +15,15 @@
 
 .header_buttons {
     text-decoration: none;
-    color: white;
-    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-family: 'Calibri', serif;
+    transition: color 0.3s; /* Smooth transition effect */
+}
+
+.header_buttons:hover {
+    color: rgb(187, 159, 90);
 }
 .title {
     background-image: url(Photos/London\ Skyline\ 5.jpg);
