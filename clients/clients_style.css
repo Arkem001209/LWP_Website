@@ -75,3 +75,24 @@
 .card_content {
     padding: 8px;
 }
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: #ffffff;
+    text-align: left;
+    padding-right: 300px;
+    padding-left: 50px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(187, 159, 90);
+}
+
+h2,
+.card_title {
+    font-size: 24px;
+    font-weight: lighter;
+    color: rgb(187, 159, 90);
+}
