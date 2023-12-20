@@ -1,9 +1,11 @@
+/* Header */
 .header {
     display: flex;
-    padding: 10px 30px;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0);
+    padding: 10px 30px;
+    background-color: rgb(0, 4, 12);
 }
+
 
 .header img {
     width: 250px;
@@ -12,8 +14,9 @@
 .right-links,
 .left-links {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     list-style: none;
+    padding-right: 2%
 }
 
 .header_buttons {
@@ -22,19 +25,20 @@
     font-weight: lighter;
     text-transform: uppercase;
     font-family: 'Calibri', serif;
-    transition: color 0.3s; /* Smooth transition effect */
+    transition: color 0.3s; 
 }
 
 .header_buttons:hover {
-    color: rgb(187, 159, 90);
+    color: gold;
 }
 
+/* Title Section */
 .title {
     position: relative;
-    background-image: url(Images/Homepage/London-Skyline-1.jpg);
     display: flex;
     flex-direction: column;
-    padding: 175px 0 150px;
+    padding: 12% 0; 
+    background-image: url(Images/Homepage/London-Skyline-1.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -42,27 +46,25 @@
 }
 
 .title h1 {
-    position: relative;
-    z-index: 2;
+    width: 65%;
     font-family: 'Playfair Display', serif;
-    font-weight: bold;
-    font-size: 80px;
-    color: #ffffff;
     text-align: left;
-    padding-right: 500px;
-    padding-left: 50px;
+    position: relative; 
+    z-index: 2; 
+    padding-right: 15%;
+    margin: 0 auto 20px;
+    font-weight: bold;
+    font-size: 75px;
+    color: #ffffff;
 }
 
-.title h2 {
-        position: relative;
-        z-index: 2;
-        font-family: 'Calibri', serif;
-        font-weight: lighter;
-        font-size: 20px;
-        color: rgb(187, 159, 90);;
-        text-align: left;
-        padding-right: 1000px;
-        padding-left: 50px;
+.title h1::after {
+    content: '';
+    display: block;
+    width: 25%;
+    height: 2px;
+    background-color: rgb(196, 175, 44);
+    margin: 30px 0;
 }
 
 .overlay {
@@ -75,48 +77,114 @@
     z-index: 1;
 }
 
-.background {
-    position: relative;
-}
-
+/* Body Section */
 .body {
     display: flex;
 }
 
-h1, h2 {
+h1 {
     font-family: 'Playfair Display', serif;
-    color: #ffffff;
-    text-align: left;
-    padding-right: 300px;
-    padding-left: 50px;
+}
+
+h2, h3, p, li {
+    font-family: Calibri;
 }
 
 h1 {
     font-size: 50px;
     font-weight: bold;
-    color: rgb(187, 159, 90);
+    color: gold;
 }
 
 h2 {
-    font-size: 24px;
-    font-weight: lighter;
-    color: rgb(187, 159, 90);
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(24, 73, 96);
+    line-height: 1.5;
 }
 
-h3, p {
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(24, 73, 96);
+    font-family: Calibri;
+    line-height: 1.5;
+}
+
+p, li {
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(0, 4, 12);
+    font-family: Calibri;
+    line-height: 1.5;
+}
+
+/* Second Section */
+.second_section {
+    margin: 0;
+    display: flex;
+    background-color: #f0f0f0;
+}
+
+.second_section h2 {
+    margin: 20 auto 0px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(24, 73, 96);
+    text-transform: uppercase; /* Make text uppercase */
+}
+
+.second_section h2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(24, 73, 96);
+    margin: 30px 0;
+}
+
+/* Cards */
+.us, .what {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 40px;
+    width: calc(50% - 40px);
+}
+
+.us_button {
+    background-color: #3498db00;
+    color: rgb(24, 73, 96);
+    padding: 16px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Calibri;
+    text-transform: uppercase;
+    border: 2.5px solid rgb(24, 73, 96);
+    cursor: pointer;
+    margin-top: 30px;
+    transition: transform 0.3s ease;
+}
+
+.us_button:hover {
+    background-color: rgba(253, 255, 255, 0.605);
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.card_title {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 4, 12);
+    margin-bottom: 10px;
+}
+
+.card_content {
+    font-family: Calibri;
     font-size: 15px;
     font-weight: normal;
-    color: rgb(23, 22, 37);
-    font-family: Calibri;
+    color: rgb(0, 4, 12);
+    padding: 20px;
 }
 
-.second_section {
-    margin: 50px;
-    display: flex;
-}
-
-.us, .what {
-    border: 0.5px solid rgb(243, 227, 159);
-    padding: 30px;
-    margin: 20px;
-}
