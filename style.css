@@ -1,73 +1,84 @@
-/* Header */
+.vertical-line {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0.5px;
+    background-color: rgb(200, 200, 200);
+    z-index: -1;
+}
+
+/* Navigation Bar */
 .header {
     display: flex;
     justify-content: space-between;
     padding: 10px 30px;
     background-color: rgb(0, 4, 12);
-}
-
-
-.header img {
+  }
+  
+  .header img {
     width: 250px;
-}
-
-.right-links,
-.left-links {
+  }
+  
+  .left-links, .right-links {
     display: flex;
     gap: 40px;
     list-style: none;
-    padding-right: 2%
-}
-
-.header_buttons {
+    padding-right: 2%;
+  }
+  
+  .header_buttons {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: lighter;
     text-transform: uppercase;
     font-family: 'Calibri', serif;
-    transition: color 0.3s; 
-}
-
-.header_buttons:hover {
-    color: gold;
-}
-
-/* Title Section */
-.title {
+    transition: color 0.3s;
+  }
+  
+  .header_buttons:hover {
+    color: #2974ab
+  }
+  
+  /* Title Section */
+  .title {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 12% 0; 
+    padding: 12% 0;
     background-image: url(Images/Homepage/London-Skyline-1.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-}
-
-.title h1 {
-    width: 65%;
+    z-index: -2;
+  }
+  
+  .title h1 {
+    width: 45%;
     font-family: 'Playfair Display', serif;
     text-align: left;
-    position: relative; 
-    z-index: 2; 
-    padding-right: 15%;
+    position: relative;
+    z-index: 2;
+    padding-right: 50%;
+    padding-left: 100px;
     margin: 0 auto 20px;
     font-weight: bold;
-    font-size: 75px;
+    font-size: 65px;
     color: #ffffff;
-}
-
-.title h1::after {
+  }
+  
+  .title h1::after {
     content: '';
     display: block;
     width: 25%;
     height: 2px;
-    background-color: rgb(196, 175, 44);
+    background-color: rgb(200, 200, 200);
     margin: 30px 0;
-}
-
-.overlay {
+  }
+  
+  .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -75,116 +86,344 @@
     height: 100%;
     background-color: rgba(0, 1, 3, 0.5);
     z-index: 1;
-}
-
-/* Body Section */
-.body {
+  }
+  
+  /* Body Section */
+  .body {
     display: flex;
-}
-
-h1 {
+  }
+  
+  h1  {
     font-family: 'Playfair Display', serif;
-}
-
-h2, h3, p, li {
-    font-family: Calibri;
-}
-
-h1 {
+    color: rgb(24, 73, 96);
     font-size: 50px;
     font-weight: bold;
-    color: gold;
-}
-
-h2 {
+  }
+  
+  h2, h3, p, li {
+    font-family: Calibri;
+    color: rgb(24, 73, 96);
+  }
+  
+  h2 {
     font-size: 15px;
     font-weight: bold;
-    color: rgb(24, 73, 96);
     line-height: 1.5;
-}
-
-h3 {
+  }
+  
+  h3 {
     font-size: 20px;
     font-weight: bold;
-    color: rgb(24, 73, 96);
-    font-family: Calibri;
     line-height: 1.5;
-}
-
-p, li {
+  }
+  
+  p, li {
     font-size: 16px;
     font-weight: normal;
-    color: rgb(0, 4, 12);
-    font-family: Calibri;
     line-height: 1.5;
-}
-
-/* Second Section */
-.second_section {
-    margin: 0;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  /* Second Section */
+  .second_section {
+    margin: 0px;
     display: flex;
     background-color: #f0f0f0;
+    z-index: -2;
+    position: relative;
 }
-
-.second_section h2 {
-    margin: 20 auto 0px;
+  
+  .second_section h2 {
+    margin: 20px auto 0;
     font-weight: bold;
     font-size: 20px;
     color: rgb(24, 73, 96);
-    text-transform: uppercase; /* Make text uppercase */
-}
-
-.second_section h2::after {
+    text-transform: uppercase;
+  }
+  
+  .second_section h2::after {
     content: '';
     display: block;
     width: 100%;
     height: 2px;
-    background-color: rgb(24, 73, 96);
+    background-color: rgb(200, 200, 200);
     margin: 30px 0;
-}
-
-/* Cards */
-.us, .what {
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  }
+  
+  /* About Us */
+  .us   {
+    margin: 80px 20px 50px 80px;
     padding: 40px;
     width: calc(50% - 40px);
-}
-
-.us_button {
-    background-color: #3498db00;
-    color: rgb(24, 73, 96);
-    padding: 16px 16px;
+  }
+  
+  .what {
+    margin: 80px 80px 50px 20px;
+    padding: 40px;
+    width: calc(50% - 40px);
+  }
+  
+  .us_button {
+    background-color: #2975ab;
+    border: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     font-size: 16px;
     font-weight: bold;
     font-family: Calibri;
     text-transform: uppercase;
-    border: 2.5px solid rgb(24, 73, 96);
     cursor: pointer;
+    padding: 20px;
     margin-top: 30px;
     transition: transform 0.3s ease;
-}
-
-.us_button:hover {
+  }
+  
+  .us_button:hover {
+    transform: scale(1);
+    border: 1.5px solid rgb(24, 73, 96);
     background-color: rgba(253, 255, 255, 0.605);
-    transform: scale(1.05); /* Scale up on hover */
-}
-
-.card_title {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    font-weight: bold;
-    color: rgb(0, 4, 12);
-    margin-bottom: 10px;
-}
-
-.card_content {
-    font-family: Calibri;
-    font-size: 15px;
     font-weight: normal;
-    color: rgb(0, 4, 12);
+    color: rgb(24, 73, 96);
+  }  
+  
+  /* Services Section */
+  .services_section {
+    background-color: #f0f0f0;
+    padding: 40px 20px 10px 20px;
+    position: relative;
+    z-index: -2;
+}
+
+.services_section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(200, 200, 200);
+    top: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+  
+  .services_section h2, .services_section h3 {
+    text-align: left;
+    position: relative;
+    font-weight: bold;
+    color: rgb(24, 73, 96);
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 50%;
+  }
+  
+  .services_section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 75px;
+    margin: 0;
+  }
+  
+  .services_section h3 {
+    font-family: Calibri;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  /* Third Section */
+  .third_section {
+    display: flex;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    max-width: 100%;
+    margin: 0 80px auto;
+    margin-bottom: 0px;
+    padding: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+  
+  /* Style for each card */
+  .card {
+    flex: 1;
+    padding: 80px;
+    margin: 0px;
+    border: 0px solid #ccc;
+    background-color: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .card_title {
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(24, 73, 96);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    transition: color 0.3s;
+  }
+  
+  .card_title::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1.5px;
+    background-color: rgb(200, 200, 200);
+    margin: 10px 0;
+  }
+  
+  .card_content {
+    font-family: Calibri;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    transition: color 0.3s;
+    padding: 20 0 50 0px;
+  }
+  
+  /* Hover effect */
+  .card:hover {
+    transform: scale(1);
+    border: 1.5px solid rgb(200, 200, 200);
+    background-color: #2975ab73
+  }
+  
+ /* News & views */
+ .news_views {
+    position: relative;
+    background-image: url(Images/Services/London-Skyline-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 60px 20 60 20;
+    display: flex;
+    justify-content: space-between;
+    z-index: -2;
+}
+
+.news_views::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 1, 3, 0.5);
+}
+
+.left-content,
+.right-content {
+    width: 50%;
+    margin: 40px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.left-content h2,
+.left-content h3 {
+    text-align: left;
+    position: relative;
+    line-height: 1;
+    color: rgb(255, 255, 255);
+    padding-left: 80px;
+    padding-right: 80px;
+    width: 100%;
+}
+
+.left-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 75px;
+    margin: 20px 0 0 0;
+}
+
+.left-content h3 {
+    font-family: Calibri;
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.right-content {
+    width: 50%;
+    margin: 0px 80px 0px 80px;
+    z-index: 2;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    margin: 20px 10px 20px 10px;
+    border: 0px solid #ccc;
+    background-color: none;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card a {
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.card a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(200, 200, 200);
+    margin: 20px 0;
+}
+
+.card-button {
+    background-color: #3498db00;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: Calibri;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+ /* Contact Section */
+ .contact {
+    background-color: #f0f0f0;
+    padding: 100 80 100 80px
+  }
+
+ .contact h1 { 
+    text-align: center;
+    padding: 20px
+}
+
+.contact button {
+    display: block;
+    margin: 0 auto;
+    background-color: #2975ab;
+    border: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Calibri;
+    text-transform: uppercase;
+    cursor: pointer;
     padding: 20px;
 }
 
+.contact button:hover {
+    transform: scale(1);
+    border: 1.5px solid rgb(24, 73, 96);
+    background-color: rgba(253, 255, 255, 0.605);
+    font-weight: normal;
+    color: rgb(24, 73, 96);
+  }  
