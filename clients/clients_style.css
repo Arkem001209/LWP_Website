@@ -23,6 +23,9 @@
     transition: color 0.3s; /* Smooth transition effect */
 }
 
+.header img {
+    width: 250px;
+  }
 .header_buttons:hover {
     color: rgb(187, 159, 90);
 }
@@ -40,6 +43,28 @@
     background-color: #464646;
     background-attachment: fixed;
 }
+.title h1 {
+    width: 45%;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    padding-right: 50%;
+    padding-left: 100px;
+    margin: 0 auto 20px;
+    font-weight: bold;
+    font-size: 65px;
+    color: #ffffff;
+  }
+  
+  .title h1::after {
+    content: '';
+    display: block;
+    width: 25%;
+    height: 2px;
+    background-color: rgb(200, 200, 200);
+    margin: 30px 0;
+  }
 .background {
     background-color: rgb(0,0,0,0.4);
     padding: 16px;
