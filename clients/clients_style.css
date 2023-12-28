@@ -103,6 +103,10 @@
 .client_value li:hover {
         background-color: #2975ab73; 
 }
+
+.client_value li:nth-child(even) {
+    text-align: right;
+}
 /* CSS */
 .contact {
     background-color: #3498db00;
