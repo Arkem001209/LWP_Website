@@ -141,13 +141,25 @@
     color: rgb(24, 73, 96);
   }  
 
-.card {
+.card,
+.test_card {
     padding: 16px;
 }
 
 .card_title,
 .card_content {
     padding: 8px;
+}
+.test_card {
+    color: #2d7cb8;
+    line-height: 1.8;
+    font-family: "FFMetaSerif", Garamond, serif;
+    font-size: 1.125em;
+    font-weight: 800;
+    background: url(/assets/quote-77250df….png) no-repeat;
+    padding: 0 0 0 40px;
+    margin: 2em 0;
+    border: none;
 }
 
 h1, h2 {
