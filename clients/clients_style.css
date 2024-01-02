@@ -162,6 +162,17 @@
     border: none;
 }
 
+.test_card cite {
+    display: block;
+    font-size: 0.8125rem;
+    color: #555555;
+}
+.test_card cite:before {
+    content: "\2014 \0020";
+}
+cite {
+    font-style: italic;
+}
 h1, h2 {
     font-family: 'Playfair Display', serif;
     color: #ffffff;
