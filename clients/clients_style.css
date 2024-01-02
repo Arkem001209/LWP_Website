@@ -154,7 +154,7 @@
     color: #2d7cb8;
     line-height: 1.8;
     font-family: "FFMetaSerif", Garamond, serif;
-    font-size: 1.125em;
+    font-size: 1.3em;
     font-weight: 800;
     background: url(/assets/quote-77250df….png) no-repeat;
     padding: 0 0 0 40px;
@@ -164,7 +164,7 @@
 
 .test_card cite {
     display: block;
-    font-size: 0.8125rem;
+    font-size: 1rem;
     color: #555555;
 }
 .test_card cite:before {
