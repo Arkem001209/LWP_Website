@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    padding: 2px;
+    padding-right: 16px;
+    justify-content: space-between;
+    background-color: black;
+
+}
+.right-links,
+.left-links {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+}
+
+.header_buttons {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-family: 'Calibri', serif;
+    transition: color 0.3s; /* Smooth transition effect */
+}
+
+.header img {
+    width: 250px;
+  }
+.header_buttons:hover {
+    color: rgb(187, 159, 90);
+}
