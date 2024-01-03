@@ -1,3 +1,4 @@
+/* Navigation Bar */
 .header {
     display: flex;
     padding: 2px;
@@ -22,9 +23,13 @@
     transition: color 0.3s; /* Smooth transition effect */
 }
 
+.header img {
+    width: 250px;
+  }
 .header_buttons:hover {
     color: rgb(187, 159, 90);
 }
+
 .title {
     background-image: url(Photos/London\ Skyline\ 5.jpg);
     color: white;
@@ -37,32 +42,107 @@
     background-size: cover;
     background-color: #464646;
     background-attachment: fixed;
+    z-index: -2;
+}
+.title h1 {
+    width: 45%;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    padding-right: 50%;
+    padding-left: 100px;
+    margin: 0 auto 20px;
+    font-weight: bold;
+    font-size: 65px;
+    color: #ffffff;
+  }
+  
+  .title h1::after {
+    content: '';
+    display: block;
+    width: 25%;
+    height: 2px;
+    background-color: rgb(200, 200, 200);
+    margin: 30px 0;
+  }
+.title h2 {
+    width: 75%;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    padding-right: 50%;
+    padding-left: 100px;
+    margin: 0 auto 20px;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgb(187, 159, 90);
 }
 .background {
     background-color: rgb(0,0,0,0.4);
     padding: 16px;
 }
 
+.client_value {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+.client_value li{
+    flex: 1 0 40%; 
+    margin: 10px;
+    padding: 15px;
+    border: solid;
+    background-color: white; 
+    transition: background-color 0.5s ease; /* Smooth transition on hover */
+}
+
+.client_value li:hover {
+        background-color: #2975ab73; 
+}
+
+.client_value li:nth-child(even) {
+    text-align: right;
+}
 /* CSS */
 .contact {
-    background-color: #3498db00;
-    color: rgb(24, 73, 96);
-    padding: 16px 16px;
+    background-color: #f0f0f0;
+    padding: 100 80 100 80px
+  }
+
+ .contact h2 { 
+    text-align: center;
+    padding: 20px
+}
+
+.contact button {
+    display: block;
+    margin: 0 auto;
+    background-color: #2975ab;
+    border: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     font-size: 16px;
     font-weight: bold;
     font-family: Calibri;
     text-transform: uppercase;
-    border: 2.5px solid rgb(24, 73, 96);
     cursor: pointer;
-    margin-top: 30px;
-    transition: transform 0.3s ease;
+    padding: 20px;
 }
 
-.contact:hover {
+.contact button:hover {
+    transform: scale(1);
+    border: 1.5px solid rgb(24, 73, 96);
     background-color: rgba(253, 255, 255, 0.605);
-    transform: scale(1.05); /* Scale up on hover */
-}
-.card {
+    font-weight: normal;
+    color: rgb(24, 73, 96);
+  }  
+
+.card,
+.test_card {
     padding: 16px;
 }
 
@@ -70,7 +150,29 @@
 .card_content {
     padding: 8px;
 }
+.test_card {
+    color: #2d7cb8;
+    line-height: 1.8;
+    font-family: "FFMetaSerif", Garamond, serif;
+    font-size: 1.3em;
+    font-weight: 800;
+    background: url(../Images/quote_mark.png) no-repeat;
+    padding: 0 0 0 40px;
+    margin: 2em 0;
+    border: none;
+}
 
+.test_card cite {
+    display: block;
+    font-size: 1rem;
+    color: #555555;
+}
+.test_card cite:before {
+    content: "\2014 \0020";
+}
+cite {
+    font-style: italic;
+}
 h1, h2 {
     font-family: 'Playfair Display', serif;
     color: #ffffff;

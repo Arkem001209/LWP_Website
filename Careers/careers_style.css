@@ -1,0 +1,66 @@
+.header {
+    display: flex;
+    padding: 2px;
+    padding-right: 16px;
+    justify-content: space-between;
+    background-color: black;
+
+}
+.right-links,
+.left-links {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+}
+
+.header_buttons {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-family: 'Calibri', serif;
+    transition: color 0.3s; /* Smooth transition effect */
+}
+
+.header img {
+    width: 250px;
+  }
+.header_buttons:hover {
+    color: #2974ab
+}
+
+.title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 12% 0;
+    background-image: url(../Images/London_skyline_7.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -2;
+  }
+  
+  .title h1 {
+    width: 45%;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    padding-right: 50%;
+    padding-left: 100px;
+    margin: 0 auto 20px;
+    font-weight: bold;
+    font-size: 65px;
+    color: #ffffff;
+  }
+  
+  .title h1::after {
+    content: '';
+    display: block;
+    width: 25%;
+    height: 2px;
+    background-color: rgb(200, 200, 200);
+    margin: 30px 0;
+  }
