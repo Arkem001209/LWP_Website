@@ -178,7 +178,23 @@ h1, h2 {
     color: #ffffff;
     text-align: left;
     padding-right: 300px;
-    padding-left: 50px;
+    padding-left: 25px;
+}
+
+.subheading {
+    font-size:34px; 
+    font-weight:500; 
+    text-transform:uppercase;
+}
+
+.subheading::before {
+    background-color: #2d7cb8;
+    border-radius: 0.25rem;
+    content: '';
+    display: block;
+    height: 0.25rem;
+    width: 42px;
+    margin-bottom: 1.25rem;
 }
 
 h1 {
