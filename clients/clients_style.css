@@ -110,13 +110,9 @@
 /* CSS */
 .contact {
     background-color: #f0f0f0;
-    padding: 100 80 100 80px
   }
 
- .contact h2 { 
-    text-align: center;
-    padding: 20px
-}
+
 
 .contact button {
     display: block;
@@ -208,4 +204,26 @@ h2,
     font-size: 24px;
     font-weight: lighter;
     color: rgb(187, 159, 90);
+}
+
+.experience {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exp_left,
+.exp_right
+ {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact h2 { 
+    text-align: center;
+    padding: 20px
+}
+.exp_card,
+.contact {
+    padding: 100 80 100 80px
 }
