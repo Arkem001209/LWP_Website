@@ -108,34 +108,7 @@
     text-align: right;
 }
 /* CSS */
-.contact {
-    background-color: #f0f0f0;
-  }
 
-
-
-.contact button {
-    display: block;
-    margin: 0 auto;
-    background-color: #2975ab;
-    border: rgb(255, 255, 255);
-    border-color: rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    font-weight: bold;
-    font-family: Calibri;
-    text-transform: uppercase;
-    cursor: pointer;
-    padding: 20px;
-}
-
-.contact button:hover {
-    transform: scale(1);
-    border: 1.5px solid rgb(24, 73, 96);
-    background-color: rgba(253, 255, 255, 0.605);
-    font-weight: normal;
-    color: rgb(24, 73, 96);
-  }  
 
 .card,
 .test_card {
@@ -209,7 +182,7 @@ h2,
 .experience {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 }
 
 .exp_left,
@@ -218,6 +191,7 @@ h2,
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
 }
 .contact h2 { 
     text-align: center;
@@ -231,5 +205,36 @@ h2,
 }
 .exp_card,
 .contact {
-    padding: 100 80 100 80px
+    padding: 100px 80px;
+    border: solid;
+    box-sizing: border-box;
+    flex-grow: 1;
 }
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+  }
+.contact button {
+    display: block;
+    margin: 0 auto;
+    background-color: #2975ab;
+    border: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Calibri;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.contact button:hover {
+    transform: scale(1);
+    border: 1.5px solid rgb(24, 73, 96);
+    background-color: rgba(253, 255, 255, 0.605);
+    font-weight: normal;
+    color: rgb(24, 73, 96);
+  }  
