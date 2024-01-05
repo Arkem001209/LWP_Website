@@ -223,6 +223,12 @@ h2,
     text-align: center;
     padding: 20px
 }
+.exp_card .card_content,
+.exp_card .card_title {
+    text-align: center;
+    padding: 20px
+
+}
 .exp_card,
 .contact {
     padding: 100 80 100 80px
