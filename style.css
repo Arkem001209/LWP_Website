@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     padding: 15px 80px 10px 80px;
-    background-color: rgb(0, 4, 12);
+    background-color: #418291;
   }
   
   .header img {
@@ -27,7 +27,7 @@
   }
   
   .header_buttons:hover {
-    color: #2974ab
+    color: #00151a
   }
   
 /* Title Section */
@@ -73,8 +73,46 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 1, 3, 0.5);
+  background-color: #011b209a;
   z-index: 1;
+}
+
+ /* Welcome */
+.container1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  flex: 1;
+  order: 2;
+  background: url(our_team/our_team/Images/Nick-Fletcher-LWP.JPG) center/cover no-repeat;
+  height: 80vm;
+}
+
+.text {
+  flex: 1;
+  order: 1;
+  padding: 80px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .container1 {
+    flex-direction: column;
+  }
+  .image, .text {
+    order: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.container1 {
+margin: 0px;
+display: flex;
+background-color: #f0f0f0;
+position: relative;
 }
   
   /* Body Section */
@@ -86,7 +124,7 @@
     font-family: 'Playfair Display', serif;
     color: rgb(24, 73, 96);
     font-size: 50px;
-    font-weight: bold;
+    font-weight: normal;
   }
   
   h2, h3, p, li {
@@ -96,7 +134,7 @@
   
   h2 {
     font-size: 15px;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 1.5;
   }
   
@@ -126,7 +164,7 @@
   
   .second_section h2 {
     margin: 20px auto 0;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 20px;
     color: rgb(24, 73, 96);
     text-transform: uppercase;
@@ -140,22 +178,20 @@
     background-color: rgb(200, 200, 200);
     margin: 30px 0;
   }
-  
+
   /* About Us */
   .us   {
-    margin: 50px 20px 50px 80px;
-    padding: 40px;
-    width: calc(50% - 40px);
+    margin: 80px;
+    width: calc(50% - 80px);
   }
   
   .what {
-    margin: 50px 80px 50px 20px;
-    padding: 40px;
-    width: calc(50% - 40px);
+    margin: 80px;
+    width: calc(50% - 80px);
   }
   
   .us_button {
-    background-color: #2975ab;
+    background-color: #418291;
     border: rgb(255, 255, 255);
     border-color: rgb(255, 255, 255);
     color: rgb(255, 255, 255);
@@ -199,7 +235,7 @@
   .services_section h2, .services_section h3 {
     text-align: left;
     position: relative;
-    font-weight: bold;
+    font-weight: normal;
     color: rgb(24, 73, 96);
     padding-left: 80px;
     padding-right: 80px;
@@ -222,6 +258,7 @@
   .third_section {
     display: flex;
     background-color: #f0f0f0;
+    padding: 0 0 60 0px;
   }
   
   .container {
@@ -271,7 +308,7 @@
     padding: 20 0 50 0px;
   }
   
-  /* Hover effect */
+/* Hover effect */
   .card1:hover {
     transform: scale(1);
     background-color: #ffffffc2;
@@ -279,36 +316,16 @@
     pointer-events: auto;
   }
   
-  
- /* News & views */
+/* News & views */ 
  .news_views {
-    position: relative;
-    background-image: url(Images/Services/London-Skyline-2.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 80px 20px 80px 20px;
-    display: flex;
-    justify-content: space-between;
+  background-color: #0a272e;
+  padding: 60px 20px;
 }
 
-.news_views::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 1, 3, 0.5);
-}
-
-.left-content,
-.right-content {
+ .left-content {
     width: 50%;
     margin: 40px 0;
     position: relative;
-    z-index: 1;
 }
 
 .left-content h2,
@@ -324,7 +341,7 @@
 
 .left-content h2 {
     font-family: 'Playfair Display', serif;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 75px;
     margin: 20px 0 0 0;
 }
@@ -337,9 +354,23 @@
 }
 
 .right-content {
-    width: 50%;
-    margin: 0px 80px 0px 80px;
-    z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 2;
+  padding: 0 60px;
+}
+
+.card2 {
+  width: 33.33%;
+  margin-bottom: 20px;
+  Padding: 2%;
+}
+
+@media (max-width: 767px) {
+  .card {
+    width: 100%;
+  }
 }
 
 .card2:hover {
@@ -355,6 +386,7 @@
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     transition: color 0.3s;
+    padding: 15 0 0 0px;
 }
 
 .card a::after {
@@ -362,8 +394,8 @@
     display: block;
     width: 100%;
     height: 1px;
-    background-color: rgb(200, 200, 200);
-    margin: 20px 0;
+    background-color: rgb(255, 255, 255);
+    margin: 15px 0;
 }
 
 .card-button {
@@ -380,10 +412,14 @@
 .card-button:hover {
   transform: scale(1);
   text-decoration: underline;
-  color: rgb(255, 255, 255);
 }
 
- /* Contact Section */
+.card a:hover {
+  transform: scale(1);
+  text-decoration: underline;
+}
+
+ /* Contact Section */ 
  .contact {
     background-color: #f0f0f0;
     padding: 120px 80px 120px 80px
@@ -391,13 +427,14 @@
 
  .contact h1 { 
     text-align: center;
-    padding: 20px
+    padding: 0 20px 20 20;
+    margin: 0 30 30 30;
 }
 
 .contact button {
     display: block;
     margin: 0 auto;
-    background-color: #2975ab;
+    background-color: #418291;
     border: rgb(255, 255, 255);
     border-color: rgb(255, 255, 255);
     color: rgb(255, 255, 255);
