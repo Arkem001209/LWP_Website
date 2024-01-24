@@ -89,43 +89,10 @@
   background-color: #011b20b6;
   z-index: 1;
 }
-
-
-  /* Welcome */
   body {
     margin: 0;
     padding: 0;
     font-family: Calibri;
-  }
-  
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .image {
-    flex: 1;
-    order: 2;
-    background: url(our_team/Images/Nick-Fletcher-LWP.JPG) center/cover no-repeat;
-    height: 80vm;
-  }
-  
-  .text {
-    flex: 1;
-    order: 1;
-    padding: 80px;
-    box-sizing: border-box;
-  }
-  
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-    }
-    .image, .text {
-      order: 0;
-      width: 100%;
-      height: auto;
-    }
   }
 
   h1  {
@@ -166,27 +133,42 @@
     list-style-type: none;
   }
 
-  .container {
-  margin: 0px;
-  display: flex;
-  background-color: #f0f0f0;
-  position: relative;
-}
-
-.team_section::before {
-  content: '';
-  display: block;
-  width: 50%;
-  height: 1px;
-  background-color: rgb(200, 200, 200);
-}
-
 /* Team Section */
-.team_section {
-  background-color: #f0f0f0;
-  padding: 0px 80px 20px 80px;
-  position: relative;
-  z-index: -2;
+ .container1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  flex: 1;
+  order: 2;
+  background: url(Images/London-Skyline-6.jpg) center/cover no-repeat;
+  height: 80vm;
+}
+
+.text {
+  flex: 1;
+  order: 1;
+  padding: 80px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .container1 {
+    flex-direction: column;
+  }
+  .image, .text {
+    order: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.container1 {
+margin: 0px;
+display: flex;
+background-color: #f0f0f0;
+position: relative;
 }
 
 .partners_section, .teams_section {
