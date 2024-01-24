@@ -106,7 +106,7 @@
   .image {
     flex: 1;
     order: 2;
-    background: url(our_team\Images\Nick-Fletcher.JPG) center/cover no-repeat;
+    background: url(our_team/Images/NickFletcherLWP.JPG) center/cover no-repeat;
     height: 80vm;
   }
   
