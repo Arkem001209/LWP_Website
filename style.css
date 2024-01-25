@@ -178,12 +178,48 @@ position: relative;
   }
 
   /* About Us */
-  .us   {
-    margin: 80px;
-    width: calc(50% - 80px);
+  
+  .accordion {
+    background-color: #f0f0f0;
+    color: #444;
+    cursor: pointer;
+    padding: 20 80px 20 80px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    transition: 0.4s;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(24, 73, 96);
   }
   
-  .what {
+  .active, .accordion:hover {
+    background-color: #ffffffb0;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: rgb(24, 73, 96);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 80px;
+    background-color: #f0f0f0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+
+  .us, .what   {
     margin: 80px;
     width: calc(50% - 80px);
   }
@@ -212,9 +248,19 @@ position: relative;
   }  
   
   /* Services Section */
+
+  .services_section_1 h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+    font-size: 75px;
+    margin: 0px;
+    background-color: #f0f0f0;
+    padding: 40 80px 20 80;
+}
+
   .services_section {
     background-color: #f0f0f0;
-    padding: 60px 0;
+    padding: 60px 0 0 0;
     position: relative;
     z-index: -2;
 }
