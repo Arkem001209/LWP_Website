@@ -229,7 +229,7 @@ text-decoration: underline;
 
 .row {
 background-color: #f0f0f0;
-padding: 10px 100px 10px 100px;
+padding: 10px 100px 0px 100px;
 }
 
 .break p {
@@ -256,37 +256,37 @@ background-color: rgb(200, 200, 200);
 
 /* Contact Section */ 
 .contact {
-background-color: #f0f0f0;
-padding: 120px 80px 120px 80px
+  background-color: #f0f0f0;
+  padding: 120px 80px 120px 80px
 }
 
 .contact h1 { 
-text-align: center;
-padding: 0 20px 20 20;
-margin: 0 30 30 30;
+  text-align: center;
+  padding: 0 20px 20 20px;
+  margin: 0 30 30 30px;
 }
 
 .contact button {
-display: block;
-margin: 0 auto;
-background-color: #418291;
-border: rgb(255, 255, 255);
-border-color: rgb(255, 255, 255);
-color: rgb(255, 255, 255);
-font-size: 15px;
-font-weight: bold;
-font-family: Calibri;
-text-transform: uppercase;
-cursor: pointer;
-padding: 20px;
+  display: block;
+  margin: 0 auto;
+  background-color: #418291;
+  border: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Calibri;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 20px;
 }
 
 .contact button:hover {
-transform: scale(1);
-border: 1.5px solid rgb(24, 73, 96);
-background-color: rgba(253, 255, 255, 0.605);
-font-weight: normal;
-color: rgb(24, 73, 96);
+  transform: scale(1);
+  border: 1.5px solid rgb(24, 73, 96);
+  background-color: rgba(253, 255, 255, 0.605);
+  font-weight: normal;
+  color: rgb(24, 73, 96);
 } 
 
 /* Footer */
