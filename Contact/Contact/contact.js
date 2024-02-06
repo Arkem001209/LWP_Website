@@ -39,17 +39,15 @@ document
   });
 
   // Map
-function initMap() {
-  var businessLocation = { lat: 51.51775354902765, lng: -0.08766509280904215 };
+    function initMap() {
+    var mapElement = document.getElementById('google-map');
+    var latitude = parseFloat(mapElement.getAttribute('data-lat'));
+    var longitude = parseFloat(mapElement.getAttribute('data-lng'));
 
-  var map = new google.maps.Map(document.getElementById('map-container'), {
-      center: businessLocation,
-      zoom: 15
-  });
+    var mapOptions = {
+        center: { lat: latitude, lng: longitude },
+        zoom: 15,
+    };
 
-  var marker = new google.maps.Marker({
-      position: businessLocation,
-      map: map,
-      title: 'London Wall Partners'
-  });
+    var map = new google.maps.Map(mapElement, mapOptions);
 }
