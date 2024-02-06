@@ -268,7 +268,13 @@ main {
     flex-direction: column;
 }
 
+.bg-cover {
+    background-size: cover !important;
+}
 
+body {
+    min-height: 100vh;
+}
 
 footer {
     background-color: rgb(0, 13, 19);
