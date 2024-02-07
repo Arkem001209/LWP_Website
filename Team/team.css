@@ -275,7 +275,7 @@ main {
 }
 
 .partners_section {
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 5%;
 }
 
@@ -288,7 +288,29 @@ a:hover {
     text-decoration: underline;
 }
 
+h1  {
+    font-family: 'Playfair Display', serif;
+    color: rgb(24, 73, 96);
+    font-size: 50px;
+    font-weight: normal;
+    line-height: 1.5;
+  }
 
+h2 {
+    font-size: auto;
+    font-weight: normal;
+    line-height: 1.5;
+    font-family: 'Playfair Display', serif;
+    color: rgb(24, 73, 96);
+  }
+
+p {
+    font-family: Calibri;
+    color: rgb(24, 73, 96);
+    font-size: auto;
+    font-weight: normal;
+    line-height: 1.5;
+  }
 
 footer {
     background-color: rgb(0, 13, 19);
@@ -296,4 +318,8 @@ footer {
     text-transform: none;
     line-height: 1.6;
     margin-top: 100px;
+}
+
+footer p {
+    color: #418291;
 }
