@@ -20,11 +20,31 @@ connection.connect((err) => {
 
 passport.use(new LocalStrategy(
     function(username, password, done) {
+        const query = 'SELECT * FROM insights WHERE username = ?';
+        connection.query(query, [username], (error, results, fields) => {
+            if (error) {
+                return done(error);
+            }
+            if (results.length === 0) {
+                return done(null, false, { message: 'Incorrect username.'});
+            }
+            const user = results[0];
+            //hashed password code here
+            bcrypt.compare(password, user.password, (err, isMatch) => {
+                if (err) {
+                    return done(err);
+                }
+                if (!isMatch) {
+                    return done(null, false, {message: 'Incorrect password.'});
+                }
+                return done(null, user);
+            });
+        });
         //Authentication logic here: to do
-        if (username === 'user' && password ==='password') {
-            return done(null, {id: 1, username: 'user'});
-        } else {
-            return done(null, false, { message: 'Incorrect username or password'});
-        }
+        //if (username === 'user' && password ==='password') {
+            //return done(null, {id: 1, username: 'user'});
+        //} else {
+            //return done(null, false, { message: 'Incorrect username or password'});
+        //}
     }
 ));
