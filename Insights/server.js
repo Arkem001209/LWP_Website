@@ -1,7 +1,6 @@
 const mysql = require('mysql');
 const express = require('express');
-const passport = require('passport');
-const passportConfig = require('./passport');
+const passport = require('./passport');
 const session = require('express-session');
 const app = express();
 
