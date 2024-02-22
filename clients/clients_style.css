@@ -177,68 +177,60 @@ h1 {
 }
 
 h2,
-.card_title {
+.slide-content {
     font-size: 24px;
     font-weight: lighter;
     color: rgb(187, 159, 90);
 }
 
-.experience {
-    display: flex;
-    justify-content: space-between;
-    flex: auto;
-}
-
-.exp_left,
-.exp_right
- {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
 .contact h2 { 
     text-align: center;
     padding: 20px
 }
-.exp_card .card_content,
-.exp_card .card_title {
-    text-align: center;
-    padding: 20px
 
-}
-.exp_card,
-.contact {
-    padding: 100px 80px;
-    border: solid;
-    box-sizing: border-box;
-    flex-grow: 1;
-}
-
-.contact {
+.slideshow-container {
     display: flex;
-    flex-direction: column;
-    background-color: #f0f0f0;
+    overflow: hidden;
+    position: relative;
+    width: 600px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
   }
-.exp_card button {
+.slide {
     display: flex;
-    margin: auto;
-    background-color: #2975ab;
-    border: rgb(255, 255, 255);
-    border-color: rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    font-weight: bold;
-    font-family: Calibri;
-    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+  }
+.photo-slide {
+    position: relative;
+    overflow: hidden;
+  }
+.photo-slide img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+  }
+.slide:hover .slide-content {
+    opacity: 1;
+    visibility: visible;
+  }
+.contact-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    padding: 20px;
-}
-
-.exp_card button:hover {
-    transform: scale(1);
-    border: 1.5px solid rgb(24, 73, 96);
-    background-color: rgba(253, 255, 255, 0.605);
-    font-weight: normal;
-    color: rgb(24, 73, 96);
-  }  
+  }
