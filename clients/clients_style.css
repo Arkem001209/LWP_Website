@@ -191,25 +191,28 @@ h2,
 .slideshow-container {
     overflow: hidden;
     position: relative;
-    width: 600px; /* Adjust as needed */
-    height: 400px; /* Adjust as needed */
+    width: 600px; 
+    height: 400px; 
   }
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    width: 300%;
 }
 .slide {
-    flex: 0 0 auto;
-    width: 600px; /* Adjust as needed */
+    flex: 0 0 600px;
+    height: 100%;
   }
   .photo-slide {
     position: relative;
     overflow: hidden;
+    width: 100%;
+    height: 100%
   }
   .photo-slide img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .slide-content {
     position: absolute;
