@@ -221,8 +221,8 @@ h2,
     background-color: #f0f0f0;
   }
 .exp_card button {
-    display: block;
-    margin: 0 auto;
+    display: flex;
+    margin: auto;
     background-color: #2975ab;
     border: rgb(255, 255, 255);
     border-color: rgb(255, 255, 255);
