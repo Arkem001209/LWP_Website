@@ -7,6 +7,10 @@
     background-color: black;
 
 }
+.testimonials{
+    display: flex;
+    flex-direction: column;
+}
 .right-links,
 .left-links {
     display: flex;
@@ -182,7 +186,7 @@ h2,
 .experience {
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    flex: auto;
 }
 
 .exp_left,
@@ -216,7 +220,7 @@ h2,
     flex-direction: column;
     background-color: #f0f0f0;
   }
-.contact button {
+.exp_card button {
     display: block;
     margin: 0 auto;
     background-color: #2975ab;
@@ -231,7 +235,7 @@ h2,
     padding: 20px;
 }
 
-.contact button:hover {
+.exp_card button:hover {
     transform: scale(1);
     border: 1.5px solid rgb(24, 73, 96);
     background-color: rgba(253, 255, 255, 0.605);
