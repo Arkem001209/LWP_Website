@@ -8,6 +8,6 @@ function showSlide(index) {
 }
 
 setInterval(() => {
-  currentIndex = (currentIndex + 1) % (slides.length - 1); // Excluding the last slide
+  currentIndex = (currentIndex + 1) % (slides.length - 1); 
   showSlide(currentIndex);
-}, 3000); // Change slide every 3 seconds
+}, 3000); 
