@@ -178,9 +178,9 @@ h1 {
 
 h2,
 .slide-content {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: lighter;
-    color: rgb(187, 159, 90);
+    color: rgb(255, 255, 255);
 }
 
 .contact h2 { 
@@ -227,14 +227,6 @@ h2,
   .slide:hover .slide-content {
     opacity: 1;
     visibility: visible;
-  }
-  .contact-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
   }
 
   .contact {
