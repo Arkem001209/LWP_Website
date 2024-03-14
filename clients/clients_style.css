@@ -7,6 +7,10 @@
     background-color: black;
 
 }
+.testimonials{
+    display: flex;
+    flex-direction: column;
+}
 .right-links,
 .left-links {
     display: flex;
@@ -173,57 +177,77 @@ h1 {
 }
 
 h2,
-.card_title {
-    font-size: 24px;
+.slide-content {
+    font-size: 20px;
     font-weight: lighter;
-    color: rgb(187, 159, 90);
-}
+    color: rgb(255, 255, 255);
+} 
 
-.experience {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-}
-
-.exp_left,
-.exp_right
- {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
 .contact h2 { 
     text-align: center;
     padding: 20px
 }
-.exp_card .card_content,
-.exp_card .card_title {
-    text-align: center;
-    padding: 20px
 
-}
-.exp_card,
-.contact {
-    padding: 100px 80px;
-    border: solid;
-    box-sizing: border-box;
-    flex-grow: 1;
-}
-
-.contact {
-    display: flex;
-    flex-direction: column;
-    background-color: #f0f0f0;
+.slideshow-container {
+    overflow: hidden;
+    position: relative;
+    width: 600px; 
+    height: 400px; 
   }
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300%;
+}
+.slide {
+    flex: 0 0 600px;
+    height: 100%;
+  }
+  .photo-slide {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%
+  }
+  .photo-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .slide:hover .slide-content {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .contact {
+    background-color: #f0f0f0;
+    padding: 120px 80px 120px 80px
+  }
+
+ .contact h1 { 
+    text-align: center;
+    padding: 0 20px 20 20;
+    margin: 0 30 30 30;
+}
+
 .contact button {
     display: block;
     margin: 0 auto;
-    background-color: #2975ab;
+    background-color: #418291;
     border: rgb(255, 255, 255);
     border-color: rgb(255, 255, 255);
     color: rgb(255, 255, 255);
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     font-family: Calibri;
     text-transform: uppercase;
@@ -237,4 +261,83 @@ h2,
     background-color: rgba(253, 255, 255, 0.605);
     font-weight: normal;
     color: rgb(24, 73, 96);
+  } 
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 80px;
+    background-color: rgb(0, 4, 12);
+  }
+  
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    width: 33.3%;
+    box-sizing: border-box;
+  }
+  
+  .footer-top {
+    width: 100%;
+  }
+  
+  .footer-bottom {
+    width: 100%;
+    padding: 0 0 20px 0;
+  }
+  
+  .footer-left p,
+  .footer-left a,
+  .footer-center p,
+  .footer-center a,
+  .footer-bottom p {
+    margin: 5px 0;
+    font-family: 'Calibri', serif;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.2;
+  }
+  
+  .footer-left p1,
+  .footer-top p1,
+  .footer-center p1 {
+    margin: 5px 0;
+    font-family: 'Playfair Display', serif;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 1.2;
+  }
+  
+  .footer-logo {
+    width: 80px;
+    height: auto;
+    margin-left: auto;
+    display: block;
+  }
+  
+  .linkedin-icon img {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .footer-center a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    transition: text-decoration 0.3s ease;
+    text-align: center;
+  }
+  
+  .footer-center a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    padding: 40px 0 20px 0;
+    text-align: center;
   }  

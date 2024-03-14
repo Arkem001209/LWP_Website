@@ -1,2 +1,2 @@
 # LWP_Website
-New website design for London Wall Partners
+Conceptual new website design for London Wall Partners. Project file to test new features ready for production. 
