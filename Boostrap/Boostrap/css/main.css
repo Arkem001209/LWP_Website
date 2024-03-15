@@ -2,8 +2,8 @@
   --primary-color: #0a1118;
   --primary-color-highlight: #233D54;
   --bs-body-bg: #e4e4e4;
-  --bs-body-font-family: "Montserrat", sans-serif;
-}
+  --bs-body-font-family: "Lato", sans-serif;
+}s
 
 html {scroll-behavior: smooth;}
 
@@ -167,7 +167,7 @@ a:hover { color: var(--primary-color); }
   }
 
 /*
-* Steps Section
+* Services Section
 */
 .steps {
   padding-top: 40px;
@@ -181,12 +181,8 @@ a:hover { color: var(--primary-color); }
 }
 
 .steps__content-width {
-  max-width: 456px;
+  max-width: 80%;
   margin: 0 auto;
-}
-
-.steps--background {
-  background-color: #ececec;
 }
 
 @media (min-width: 544px) {
