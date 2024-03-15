@@ -1,8 +1,43 @@
 :root {
-    --primary-color: #0a1118;
-    --primary-color-highlight: #233254;
-    --bs-body-bg: #fbf9f6;
-    --bs-body-font-family: 'Playfair+Display';
+  --primary-color: #0a1118;
+  --primary-color-highlight: #233D54;
+  --bs-body-bg: #e4e4e4;
+  --bs-body-font-family: "Montserrat", sans-serif;
+}
+
+html {scroll-behavior: smooth;}
+
+a { color: var(--primary-color); }
+a:hover { color: var(--primary-color); }
+
+/*
+ @media (min-width: 544px) {}
+ @media (min-width: 768px) {}
+ @media (min-width: 992px) {}
+ @media (min-width: 1200px) {}
+ @media (min-width: 1400px) {}
+ @media (min-width: 1600px) {}
+*/
+
+/*
+* Custom container
+*/
+.container-custom {
+  width: 100%;
+  padding: 0 3rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .container-custom { width: 1140px; }
+}
+
+@media (min-width: 1400px) {
+  .container-custom { width: 1340px; }
+}
+
+@media (min-width: 1600px) {
+  .container-custom { width: 1520px; }
 }
 
 /*
@@ -21,15 +56,15 @@
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: rgb(0, 47, 92);
+    background-color: rgb(25, 93, 105);
     z-index: 4;
-}
+  }
 
 .dropdown-nav__closeNavBtn {
     position: absolute;
     top: 20px;
     right: 16px;
-    background-color: rgbA(255,255,255,0.6)
+    background-color: rgbA(255,255,255,0.6);
 }
 
 #navbar .nav-list {
@@ -53,7 +88,7 @@
   }
 
 
-  /*
+/*
 * Hero section
 */
   .hero {
@@ -61,6 +96,12 @@
     height: 100vh;
     background-color: var(--primary-color);
     overflow: hidden;
+  }
+
+  @media (min-width: 1400px) {
+    .hero__heading {
+      font-size: 60rem;
+    }
   }
 
   .hero__image {
@@ -88,3 +129,73 @@
   .hero__content {
     z-index: 1;
   }
+
+  .hero__content-width {
+    max-width: 700px;
+  }
+
+  .hero__scroll-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    z-index: 1;
+    color: var(--bs-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .hero__scroll-btn:hover {
+    color: var(--bs-light);
+    opacity: 0.8;
+  }
+
+  .hero__scroll-btn .bi {
+    transition-delay: 0.8s;
+    animation: bounce 1s infinite alternate;
+  }
+
+  @keyframes bounce {
+    from {
+      transform: translateY(5px);
+    }
+    to {
+      transform: translateY(-5px);
+    }
+  }
+
+/*
+* Steps Section
+*/
+.steps {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.steps__section-thumbnail {
+  height: 240px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.steps__content-width {
+  max-width: 456px;
+  margin: 0 auto;
+}
+
+.steps--background {
+  background-color: #ececec;
+}
+
+@media (min-width: 544px) {
+  .steps {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .steps__section-thumbnail {
+    height: auto;
+  }
+}
