@@ -131,7 +131,7 @@ a:hover { color: var(--primary-color); }
   }
 
   .hero__content-width {
-    max-width: 700px;
+    max-width: 75%;
   }
 
   .hero__scroll-btn {
@@ -195,3 +195,29 @@ a:hover { color: var(--primary-color); }
     height: auto;
   }
 }
+
+/*
+* Footer Section
+*/
+
+.footer { 
+  background-color: var(--primary-color); 
+} 
+
+.footer-content h2 { 
+  color: #ffffff; 
+} 
+
+.footer-content h5, 
+.footer-content p, 
+.footer-links a { 
+  color: #ffffff; 
+} 
+
+.footer-links a:hover { 
+  text-decoration: underline; 
+} 
+
+.footer hr { 
+  background-color: #fff; 
+} 
