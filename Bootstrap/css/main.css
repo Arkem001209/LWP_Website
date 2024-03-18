@@ -1,9 +1,9 @@
 :root {
   --primary-color: #0a1118;
-  --primary-color-highlight: #233D54;
-  --bs-body-bg: #e4e4e4;
-  --bs-body-font-family: "Lato", sans-serif;
-}s
+  --primary-color-highlight: #0D7680;
+  --bs-body-bg: #FFF1E0;
+  --bs-body-font-family: "Georgia", sans-serif;
+}
 
 html {scroll-behavior: smooth;}
 
@@ -56,7 +56,7 @@ a:hover { color: var(--primary-color); }
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: rgb(25, 93, 105);
+    background-color: #0D7680;
     z-index: 4;
   }
 
@@ -71,20 +71,20 @@ a:hover { color: var(--primary-color); }
     list-style: none;
   }
   #navbar .nav-list li {
-    border-bottom: 1px dotted rgba(255, 255, 255, 0.712);
+    border-bottom: 1px dotted #F2DFCE;
     line-height: 6rem;
   }
   #navbar .nav-list li a {
-    color: rgb(255, 255, 255);
+    color: #FFF9F5;
     display: block;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   #navbar .nav-list li a:hover, 
   #navbar .nav-list li a:focus {
-    color: rgb(30, 170, 180);
+    color: #F2DFCE;
   }
 
 
@@ -170,8 +170,8 @@ a:hover { color: var(--primary-color); }
 * Services Section
 */
 .steps {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .steps__section-thumbnail {
@@ -202,6 +202,8 @@ a:hover { color: var(--primary-color); }
 
 .footer { 
   background-color: var(--primary-color); 
+  font-size: smaller;
+  font-weight: lighter;
 } 
 
 .footer-content h2 { 
