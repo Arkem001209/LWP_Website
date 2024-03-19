@@ -229,3 +229,41 @@ a:hover { color: var(--primary-color); }
 .footer hr { 
   background-color: #fff; 
 } 
+
+/*
+* Homepage End // Our Team Start
+*/
+
+/*
+* Services Section
+*/
+
+.team__steps {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.steps__section-thumbnail {
+  height: 400px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.steps__content-width {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+@media (min-width: 544px) {
+  .team__steps {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .steps__section-thumbnail {
+    height: auto;
+  }
+}
+
+
