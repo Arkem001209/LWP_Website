@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #0a1118;
+  --primary-color: #021113;
   --primary-color-highlight: #0D7680;
   --bs-body-bg: #FFF1E0;
   --bs-body-font-family: "Georgia", sans-serif;
@@ -102,6 +102,12 @@ a:hover { color: var(--primary-color); }
     .hero__heading {
       font-size: 60rem;
     }
+  }
+
+  @media (min-width: 1600px) {
+    h1.\.hero__heading.mb-4 {
+    font-size: 3.2rem;
+  }
   }
 
   .hero__image {
