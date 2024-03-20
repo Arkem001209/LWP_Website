@@ -11,10 +11,6 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/main.css">
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
@@ -75,9 +71,11 @@
 
 <!-- Hero Section End -->
 
+<!-- Search Section Start -->
+
 <a id="scroll-down"></a>
 
-<section class="container-custom p-5 justify-content-md-center">
+<section class="search-bar container-custom p-5 justify-content-md-center">
 <div class="col-12 col-sm-12 mb-4">
 </div>
 <input type="text" id="search-bar" placeholder="Search by name...">
@@ -86,21 +84,17 @@
 </div>
 </section>
 
-<!-- Partners Section Start -->
-<section class="team__steps container-custom">
+<!-- Search Section End -->
 
-    <div class="d-flex h-100 align-items-center">
-        <div class="text-black">
-            <h1 class=".hero__heading mb-4">Partners</h1>
-        </div>
-        </div>
+<!-- Team Section Start -->
+
+<section class="team__steps container-custom">
 
     <div class="steps">
     <div class="row justify-content-md-center text-center">
 
       <div class="col-12 col-sm-4 mb-4 team-member" data-tags="Partners, Investment Committee, Financial Planners">
         <img src="img/Team Images/Nick Fletcher.png" alt="Nick Fletcher" class="img-fluid pb-4 steps__section-thumbnail" width="1080" height="1080" loading="lazy">
-        <hr>
         <h3>Nick Fletcher</h3>
         <p>Senior Partner</p>
         <a href="#">Read more <i class="bi bi-arrow-right"></i></a>
@@ -109,16 +103,14 @@
 
       <div class="col-12 col-sm-4 mb-4 team-member" data-tags="Partners, Investment Committee, Financial Planners">
         <img src="img/Team Images/David Lovell.png" alt="David Lovell" class="img-fluid pb-4 steps__section-thumbnail" width="1080" height="1080" loading="lazy">
-        <hr>
         <h3>David Lovell</h3>
         <p>Client Adviser and Board Member</p>
         <a href="#">Read more <i class="bi bi-arrow-right"></i></a>
         <hr>
       </div>
 
-      <div class="col-12 col-sm-4 mb-4 team-member" data-tags="Partners, Investment Committee, Operations, Finance">
+      <div class="col-12 col-sm-4 mb-4 team-member" data-tags="Partners, Investment Committee, Operations Team, Finance">
         <img src="img/Team Images/Mark Johnston.png" alt="Mark Johnston" class="img-fluid pb-4 steps__section-thumbnail" width="1080" height="1080" loading="lazy">
-        <hr>
         <h3>Mark Johnston</h3>
         <p>CFO and COO</p>
         <a href="#">Read more <i class="bi bi-arrow-right"></i></a>
@@ -127,7 +119,6 @@
 
       <div class="col-12 col-sm-4 mb-4 team-member" data-tags="Partners, Investment Committee, Compliance, Human Resources">
         <img src="img/Team Images/Ruth Chadwick.png" alt="Ruth Chadwick" class="img-fluid pb-4 steps__section-thumbnail" width="1080" height="1080" loading="lazy">
-        <hr>
         <h3>Ruth Chadwick</h3>
         <p>Compliance Officer</p>
         <a href="#">Read more <i class="bi bi-arrow-right"></i></a>
@@ -136,33 +127,15 @@
 
       <div class="col-12 col-sm-4 mb-4 team-member" data-tags="Partners, Investment Committee, Investment Team">
         <img src="img/Team Images/Stuart Fowler.png" alt="Stuart Fowler" class="img-fluid pb-4 steps__section-thumbnail" width="1080" height="1080" loading="lazy">
-        <hr>
         <h3>Stuart Fowler</h3>
         <p>Investment Director</p>
         <a href="#">Read more <i class="bi bi-arrow-right"></i></a>
         <hr>
       </div>
 
-    </div>
-  </div>
-</section>
+        <div class="row justify-content-md-center text-center">
 
-<!-- Partners Section End -->
-
-<!-- Team Section Start -->
-
-<section class="team__steps container-custom">
-
-    <div class="d-flex h-100 align-items-center">
-        <div class="text-black">
-            <h1 class=".hero__heading mb-4">The Team</h1>
-        </div>
-        </div>
-
-    <div class="steps">
-    <div class="row justify-content-md-center text-center">
-
-        <div class="col-12 col-sm-3 mb-4 team-member" data-tags="Client Operations, Team Leads">
+      <div class="col-12 col-sm-3 mb-4 team-member" data-tags="Team Leads, Client Operations">
             <img src="img/Team Images/Steve Norburne.png" alt="Steve Norburne" class="img-fluid pb-4 steps__section-thumbnail" width="1080" height="1080" loading="lazy">
             <h3>Steve Norburne</h3>
             <p>Director, Chartered Financial Planner and Fellow of the Personal Finance Society</p>
@@ -220,7 +193,7 @@
         <hr>
     </div>
 
-        <div class="col-12 col-sm-3 mb-4 team-member" data-tags="Operations">
+        <div class="col-12 col-sm-3 mb-4 team-member" data-tags="Operations Team">
           <img src="img/Team Images/Max Arkell.png" alt="Max Arkell" class="img-fluid pb-4 steps__section-thumbnail" width="1080" height="1080" loading="lazy">
           <h3>Max Arkell</h3>
           <p>Operations Associate</p>
@@ -233,13 +206,6 @@
         <p>Assistant Financial Planner</p>
         <hr>
     </div>
-
-    <div class="col-12 col-sm-3 mb-4 team-member" data-tags="Financial Planners">
-        <img src="img/Team Images/Charlie Barrow.png" alt="Charlie Barrow" class="img-fluid pb-4 steps__section-thumbnail" width="1080" height="1080" loading="lazy">
-        <h3>Charlie Barrow</h3>
-        <p>Associate Financial Planner</p>
-        <hr>
-      </div>
 
   <div class="col-12 col-sm-3 mb-4 team-member" data-tags="Financial Planners">
       <img src="img/Team Images/Tobias Campbell.png" alt="Tobias Campbell" class="img-fluid pb-4 steps__section-thumbnail" width="1080" height="1080" loading="lazy">
@@ -410,7 +376,7 @@
 <hr>
 </div>
 
-<div class="col-12 col-sm-3 mb-4 team-member" data-tags="Operations">
+<div class="col-12 col-sm-3 mb-4 team-member" data-tags="Operations Team">
     <img src="img/Team Images/Thomas Powell.png" alt="Thomas Powell" class="img-fluid pb-4 steps__section-thumbnail" width="1080" height="1080" loading="lazy">
     <h3>Thomas Powell</h3>
     <p>Senior Associate, Operations</p>

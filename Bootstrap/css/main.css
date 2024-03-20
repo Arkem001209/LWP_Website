@@ -203,6 +203,14 @@ a:hover { color: var(--primary-color); }
 }
 
 /*
+* Insights Section
+*/
+
+.insight {
+  transform: translateY(-5%);
+}
+
+/*
 * Footer Section
 */
 
@@ -269,4 +277,8 @@ input[type="text"] {
   background-color: #0D7680;
   color: #F2DFCE;
   border:#0D7680;
+}
+
+.search-bar {
+  transform: translateY(25%);
 }
