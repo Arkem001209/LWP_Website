@@ -211,34 +211,6 @@ a:hover { color: var(--primary-color); }
 }
 
 /*
-* Footer Section
-*/
-
-.footer { 
-  background-color: var(--primary-color); 
-  font-size: smaller;
-  font-weight: lighter;
-} 
-
-.footer-content h2 { 
-  color: #ffffff; 
-} 
-
-.footer-content h5, 
-.footer-content p, 
-.footer-links a { 
-  color: #ffffff; 
-} 
-
-.footer-links a:hover { 
-  text-decoration: underline; 
-} 
-
-.footer hr { 
-  background-color: #fff; 
-} 
-
-/*
 * Homepage End // Our Team Start
 */
 
@@ -282,3 +254,46 @@ input[type="text"] {
 .search-bar {
   transform: translateY(25%);
 }
+
+/*
+* Our Team End // Contact Start
+*/
+
+
+
+/*
+* Notice Section
+*/
+
+.notice {
+  transform: translateY(15rem);
+}
+
+
+/*
+* Footer Section
+*/
+
+.footer { 
+  background-color: var(--primary-color); 
+  font-size: smaller;
+  font-weight: lighter;
+} 
+
+.footer-content h2 { 
+  color: #ffffff; 
+} 
+
+.footer-content h5, 
+.footer-content p, 
+.footer-links a { 
+  color: #ffffff; 
+} 
+
+.footer-links a:hover { 
+  text-decoration: underline; 
+} 
+
+.footer hr { 
+  background-color: #fff; 
+} 
