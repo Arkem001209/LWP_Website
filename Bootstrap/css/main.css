@@ -313,7 +313,7 @@ input[type="text"] {
     font-family: "FFMetaSerif", Garamond, serif;
     font-size: 1.3em;
     font-weight: 800;
-    background: url(../Images/quote_mark.png) no-repeat;
+    background: url(../img/quote_mark.png) no-repeat;
     padding: 0 0 0 40px;
     margin: 2em 0;
     border: none;
