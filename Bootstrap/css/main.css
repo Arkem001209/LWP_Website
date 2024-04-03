@@ -297,3 +297,59 @@ input[type="text"] {
 .footer hr { 
   background-color: #fff; 
 } 
+
+.card,
+.test_card {
+    padding: 16px;
+}
+
+.card_title,
+.card_content {
+    padding: 8px;
+}
+.test_card {
+    color: #2d7cb8;
+    line-height: 1.8;
+    font-family: "FFMetaSerif", Garamond, serif;
+    font-size: 1.3em;
+    font-weight: 800;
+    background: url(../Images/quote_mark.png) no-repeat;
+    padding: 0 0 0 40px;
+    margin: 2em 0;
+    border: none;
+}
+
+.test_card cite {
+    display: block;
+    font-size: 1rem;
+    color: #555555;
+}
+.test_card cite:before {
+    content: "\2014 \0020";
+}
+cite {
+    font-style: italic;
+}
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: #ffffff;
+    text-align: left;
+    padding-right: 300px;
+    padding-left: 25px;
+}
+
+.subheading {
+    font-size:34px; 
+    font-weight:500; 
+    text-transform:uppercase;
+}
+
+.subheading::before {
+    background-color: #2d7cb8;
+    border-radius: 0.25rem;
+    content: '';
+    display: block;
+    height: 0.25rem;
+    width: 42px;
+    margin-bottom: 1.25rem;
+}
