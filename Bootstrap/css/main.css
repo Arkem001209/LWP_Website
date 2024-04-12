@@ -96,6 +96,13 @@ a:hover { color: var(--primary-color); }
     height: 100vh;
     background-color: var(--primary-color);
     overflow: hidden;
+    flex-direction: column;
+    padding: 15% 0;
+    background-image: url(../img/bg-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
   }
 
   @media (min-width: 1400px) {
