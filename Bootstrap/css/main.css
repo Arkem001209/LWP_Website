@@ -381,3 +381,51 @@ cite {
     width: 42px;
     margin-bottom: 1.25rem;
 }
+
+/*
+* Contact Us
+*/
+
+.form
+{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.input-group, .textarea-group
+{
+    padding: 1% 0;
+}
+
+input, textarea
+{
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #757575;
+    padding: 1.5%;
+    font-size: 20px;
+}
+
+input:focus, textarea:focus
+{
+    background-color: transparent;
+    outline: transparent;
+}
+
+input::placeholder, textarea::placeholder
+{
+    color: transparent;
+}
+
+label
+{
+    color: #757575;
+    position: relative;
+    left: 0.5em;
+    top: -2em;
+	cursor: auto;
+    transition: 0.3s ease all;
+}
