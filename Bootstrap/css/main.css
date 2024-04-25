@@ -316,13 +316,13 @@ input[type="text"] {
 } 
 
 .footer-content h2 { 
-  color: #ffffff; 
+  color: #eeeeee; 
 } 
 
 .footer-content h5, 
 .footer-content p, 
 .footer-links a { 
-  color: #ffffff; 
+  color: #eeeeee; 
 } 
 
 .footer-links a:hover { 
@@ -330,7 +330,7 @@ input[type="text"] {
 } 
 
 .footer hr { 
-  background-color: #fff; 
+  background-color: #eeeeee; 
 } 
 
 .card,
