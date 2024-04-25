@@ -1,7 +1,7 @@
 :root {
   --primary-color: #021113;
   --primary-color-highlight: #0D7680;
-  --bs-body-bg: #FFF1E0;
+  --bs-body-bg: #eeeeee;
   --bs-body-font-family: "Georgia", sans-serif;
 }
 
@@ -71,7 +71,7 @@ a:hover { color: var(--primary-color); }
     list-style: none;
   }
   #navbar .nav-list li {
-    border-bottom: 1px dotted #F2DFCE;
+    border-bottom: 1px dotted #eeeeee;
     line-height: 6rem;
   }
   #navbar .nav-list li a {
@@ -84,7 +84,7 @@ a:hover { color: var(--primary-color); }
   }
   #navbar .nav-list li a:hover, 
   #navbar .nav-list li a:focus {
-    color: #F2DFCE;
+    color: #eeeeee;
   }
 
 
@@ -99,6 +99,34 @@ a:hover { color: var(--primary-color); }
     flex-direction: column;
     padding: 15% 0;
     background-image: url(../img/bg-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .hero_2 {
+    position: relative;
+    height: 100vh;
+    background-color: var(--primary-color);
+    overflow: hidden;
+    flex-direction: column;
+    padding: 15% 0;
+    background-image: url(../img/bg-hero-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .hero_3 {
+    position: relative;
+    height: 100vh;
+    background-color: var(--primary-color);
+    overflow: hidden;
+    flex-direction: column;
+    padding: 15% 0;
+    background-image: url(../img/bg-hero-3.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -254,7 +282,7 @@ input[type="text"] {
 
 .filter-button:hover {
   background-color: #0D7680;
-  color: #F2DFCE;
+  color: #eeeeee;
   border:#0D7680;
 }
 
