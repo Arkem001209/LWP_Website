@@ -96,13 +96,6 @@ a:hover { color: var(--primary-color); }
     height: 100vh;
     background-color: var(--primary-color);
     overflow: hidden;
-    flex-direction: column;
-    padding: 15% 0;
-    background-image: url(../img/bg-hero.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
   }
 
   @media (min-width: 1400px) {
@@ -118,7 +111,7 @@ a:hover { color: var(--primary-color); }
   }
 
   .hero__image {
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     min-width: 100%;
@@ -210,12 +203,32 @@ a:hover { color: var(--primary-color); }
 }
 
 /*
-* Insights Section
+* Footer Section
 */
 
-.insight {
-  transform: translateY(-5%);
-}
+.footer { 
+  background-color: var(--primary-color); 
+  font-size: smaller;
+  font-weight: lighter;
+} 
+
+.footer-content h2 { 
+  color: #ffffff; 
+} 
+
+.footer-content h5, 
+.footer-content p, 
+.footer-links a { 
+  color: #ffffff; 
+} 
+
+.footer-links a:hover { 
+  text-decoration: underline; 
+} 
+
+.footer hr { 
+  background-color: #fff; 
+} 
 
 /*
 * Homepage End // Our Team Start
@@ -256,100 +269,4 @@ input[type="text"] {
   background-color: #0D7680;
   color: #F2DFCE;
   border:#0D7680;
-}
-
-.search-bar {
-  transform: translateY(25%);
-}
-
-/*
-* Our Team End // Contact Start
-*/
-
-
-
-/*
-* Notice Section
-*/
-
-.notice {
-  transform: translateY(15rem);
-}
-
-
-/*
-* Footer Section
-*/
-
-.footer { 
-  background-color: var(--primary-color); 
-  font-size: smaller;
-  font-weight: lighter;
-} 
-
-.footer-content h2 { 
-  color: #ffffff; 
-} 
-
-.footer-content h5, 
-.footer-content p, 
-.footer-links a { 
-  color: #ffffff; 
-} 
-
-.footer-links a:hover { 
-  text-decoration: underline; 
-} 
-
-.footer hr { 
-  background-color: #fff; 
-} 
-
-.card,
-.test_card {
-    padding: 16px;
-}
-
-.card_title,
-.card_content {
-    padding: 8px;
-}
-.test_card {
-    color: #2d7cb8;
-    line-height: 1.8;
-    font-family: "FFMetaSerif", Garamond, serif;
-    font-size: 1.3em;
-    font-weight: 800;
-    background: url(../img/quote_mark.png) no-repeat;
-    padding: 0 0 0 40px;
-    margin: 2em 0;
-    border: none;
-}
-
-.test_card cite {
-    display: block;
-    font-size: 1rem;
-    color: #555555;
-}
-.test_card cite:before {
-    content: "\2014 \0020";
-}
-cite {
-    font-style: italic;
-}
-
-.subheading {
-    font-size:34px; 
-    font-weight:500; 
-    text-transform:uppercase;
-}
-
-.subheading::before {
-    background-color: #2d7cb8;
-    border-radius: 0.25rem;
-    content: '';
-    display: block;
-    height: 0.25rem;
-    width: 42px;
-    margin-bottom: 1.25rem;
 }
